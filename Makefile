@@ -10,6 +10,8 @@ CYAN	:= '\e[36m'
 PURPLE	:= '\e[35m'
 NC	:= '\e[0m'
 
+DOCDIR = ./docs
+
 all:
 	@ echo ${CYAN}Buildinging trace-cruncher:${NC};
 	python3 setup.py build
@@ -31,3 +33,9 @@ uninstall:
 	rm -rfv dist tracecruncher.egg-info; \
 	rm -fv install_manifest.txt; \
 	fi
+
+doc:
+	$(MAKE) --directory=$(DOCDIR)
+
+doc_clean:
+	rm -f $(DOCDIR)/*.html

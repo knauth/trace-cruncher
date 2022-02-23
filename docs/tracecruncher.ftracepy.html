@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module tracecruncher.ftracepy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="tracecruncher.html"><font color="#ffffff">tracecruncher</font></a>.ftracepy</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/usr/local/lib/python3.9/dist-packages/tracecruncher-0.2.0-py3.9-linux-x86_64.egg/tracecruncher/ftracepy.cpython-39-x86_64-linux-gnu.so">/usr/local/lib/python3.9/dist-packages/tracecruncher-0.2.0-py3.9-linux-x86_64.egg/tracecruncher/ftracepy.cpython-39-x86_64-linux-gnu.so</a></font></td></tr></table>
+    <p><tt>Python&nbsp;interface&nbsp;for&nbsp;Ftrace.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#Exception">builtins.Exception</a>(<a href="builtins.html#BaseException">builtins.BaseException</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="tracecruncher.ftracepy.html#tep_error">tep_error</a>
+</font></dt><dt><font face="helvetica, arial"><a href="tracecruncher.ftracepy.html#tfs_error">tfs_error</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial">ftracepy.PyDynevent
+</font></dt><dt><font face="helvetica, arial">ftracepy.PySynthEvent
+</font></dt><dt><font face="helvetica, arial">ftracepy.PyTep
+</font></dt><dt><font face="helvetica, arial">ftracepy.PyTepEvent
+</font></dt><dt><font face="helvetica, arial">ftracepy.PyTepRecord
+</font></dt><dt><font face="helvetica, arial">ftracepy.PyTfsInstance
+</font></dt><dt><font face="helvetica, arial">ftracepy.PyTraceHist
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="tep_error">class <strong>tep_error</strong></a>(<a href="builtins.html#Exception">builtins.Exception</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="tracecruncher.ftracepy.html#tep_error">tep_error</a></dd>
+<dd><a href="builtins.html#Exception">builtins.Exception</a></dd>
+<dd><a href="builtins.html#BaseException">builtins.BaseException</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="builtins.html#Exception">builtins.Exception</a>:<br>
+<dl><dt><a name="tep_error-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Static methods inherited from <a href="builtins.html#Exception">builtins.Exception</a>:<br>
+<dl><dt><a name="tep_error-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;<a href="builtins.html#object">object</a>.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><a name="tep_error-__delattr__"><strong>__delattr__</strong></a>(self, name, /)</dt><dd><tt>Implement&nbsp;delattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="tep_error-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><tt>Return&nbsp;getattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="tep_error-__reduce__"><strong>__reduce__</strong></a>(...)</dt><dd><tt>Helper&nbsp;for&nbsp;pickle.</tt></dd></dl>
+
+<dl><dt><a name="tep_error-__repr__"><strong>__repr__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="tep_error-__setattr__"><strong>__setattr__</strong></a>(self, name, value, /)</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="tep_error-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="tep_error-__str__"><strong>__str__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="tep_error-with_traceback"><strong>with_traceback</strong></a>(...)</dt><dd><tt><a href="builtins.html#Exception">Exception</a>.<a href="#tep_error-with_traceback">with_traceback</a>(tb)&nbsp;--<br>
+set&nbsp;self.<strong>__traceback__</strong>&nbsp;to&nbsp;tb&nbsp;and&nbsp;return&nbsp;self.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><strong>__cause__</strong></dt>
+<dd><tt>exception&nbsp;cause</tt></dd>
+</dl>
+<dl><dt><strong>__context__</strong></dt>
+<dd><tt>exception&nbsp;context</tt></dd>
+</dl>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>__suppress_context__</strong></dt>
+</dl>
+<dl><dt><strong>__traceback__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><strong>tep_event</strong> = <a name="tep_event">class PyTepEvent</a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>libtrace&nbsp;<a href="#tep_event">tep_event</a>&nbsp;<a href="builtins.html#object">object</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="PyTepEvent-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="PyTepEvent-field_names"><strong>field_names</strong></a>(...)</dt><dd><tt>Get&nbsp;the&nbsp;names&nbsp;of&nbsp;all&nbsp;fields&nbsp;of&nbsp;a&nbsp;given&nbsp;event.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+list&nbsp;of&nbsp;strings<br>
+&nbsp;&nbsp;&nbsp;&nbsp;All&nbsp;fields&nbsp;of&nbsp;the&nbsp;event</tt></dd></dl>
+
+<dl><dt><a name="PyTepEvent-get_pid"><strong>get_pid</strong></a>(...)</dt><dd><tt>Get&nbsp;the&nbsp;Process&nbsp;Id&nbsp;of&nbsp;the&nbsp;record.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+record&nbsp;:&nbsp;PyTepRecord<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Event&nbsp;record&nbsp;to&nbsp;derive&nbsp;the&nbsp;PID&nbsp;from.&nbsp;<br>
+Returns<br>
+-------<br>
+int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;PID&nbsp;value.</tt></dd></dl>
+
+<dl><dt><a name="PyTepEvent-id"><strong>id</strong></a>(...)</dt><dd><tt>Get&nbsp;the&nbsp;unique&nbsp;Id&nbsp;number&nbsp;of&nbsp;the&nbsp;event.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Id&nbsp;number.</tt></dd></dl>
+
+<dl><dt><a name="PyTepEvent-name"><strong>name</strong></a>(...)</dt><dd><tt>Get&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;event.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Event&nbsp;name</tt></dd></dl>
+
+<dl><dt><a name="PyTepEvent-parse_record_field"><strong>parse_record_field</strong></a>(...)</dt><dd><tt>Get&nbsp;the&nbsp;content&nbsp;of&nbsp;a&nbsp;record&nbsp;field.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+record&nbsp;:&nbsp;PyTepRecord<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Event&nbsp;record&nbsp;to&nbsp;derive&nbsp;the&nbsp;field&nbsp;value&nbsp;from.&nbsp;<br>
+field&nbsp;:&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;field.&nbsp;<br>
+Returns<br>
+-------<br>
+int&nbsp;or&nbsp;string&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;value&nbsp;of&nbsp;the&nbsp;field.</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="PyTepEvent-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;<a href="builtins.html#object">object</a>.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><strong>tep_handle</strong> = <a name="tep_handle">class PyTep</a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>libtrace&nbsp;<a href="#tep_handle">tep_handle</a>&nbsp;<a href="builtins.html#object">object</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="PyTep-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="PyTep-event_record"><strong>event_record</strong></a>(...)</dt><dd><tt>Generic&nbsp;print&nbsp;of&nbsp;a&nbsp;recorded&nbsp;trace&nbsp;event.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+event&nbsp;:&nbsp;PyTepEvent<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;event&nbsp;descriptor&nbsp;<a href="builtins.html#object">object</a>.<br>
+record&nbsp;:&nbsp;PyTepRecord<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;record.<br>
+Returns<br>
+-------<br>
+string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;recorded&nbsp;tracing&nbsp;data&nbsp;in&nbsp;a&nbsp;human-readable&nbsp;form.</tt></dd></dl>
+
+<dl><dt><a name="PyTep-get_event"><strong>get_event</strong></a>(...)</dt><dd><tt>Get&nbsp;a&nbsp;Tep&nbsp;Event&nbsp;for&nbsp;a&nbsp;given&nbsp;trace&nbsp;event.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+system&nbsp;:&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;system&nbsp;of&nbsp;the&nbsp;event.<br>
+name&nbsp;:&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;event.<br>
+Returns<br>
+-------<br>
+PyTepEvent<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;Tep&nbsp;Event&nbsp;corresponding&nbsp;to&nbsp;the&nbsp;given&nbsp;trace&nbsp;event.</tt></dd></dl>
+
+<dl><dt><a name="PyTep-info"><strong>info</strong></a>(...)</dt><dd><tt>Generic&nbsp;print&nbsp;of&nbsp;a&nbsp;trace&nbsp;event&nbsp;information.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+event&nbsp;:&nbsp;PyTepEvent<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;event&nbsp;descriptor&nbsp;<a href="builtins.html#object">object</a>.<br>
+record&nbsp;:&nbsp;PyTepRecord<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;record.<br>
+Returns<br>
+-------<br>
+string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;recorded&nbsp;values&nbsp;of&nbsp;the&nbsp;event&nbsp;fields&nbsp;in&nbsp;a&nbsp;human-readable&nbsp;form.</tt></dd></dl>
+
+<dl><dt><a name="PyTep-init_local"><strong>init_local</strong></a>(...)</dt><dd><tt>Initialize&nbsp;tep&nbsp;from&nbsp;the&nbsp;local&nbsp;events<br>
+&nbsp;<br>
+Create&nbsp;Trace&nbsp;Events&nbsp;Parser&nbsp;(tep)&nbsp;from&nbsp;a&nbsp;trace&nbsp;instance&nbsp;path.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+dir&nbsp;:&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;instance&nbsp;directory&nbsp;that&nbsp;contains&nbsp;the&nbsp;events.&nbsp;<br>
+&nbsp;&nbsp;system&nbsp;:&nbsp;string&nbsp;or&nbsp;list&nbsp;of&nbsp;strings<br>
+&nbsp;&nbsp;&nbsp;&nbsp;One&nbsp;or&nbsp;more&nbsp;system&nbsp;names,&nbsp;to&nbsp;load&nbsp;the&nbsp;events&nbsp;from.</tt></dd></dl>
+
+<dl><dt><a name="PyTep-process"><strong>process</strong></a>(...)</dt><dd><tt>Generic&nbsp;print&nbsp;of&nbsp;the&nbsp;process&nbsp;that&nbsp;generated&nbsp;the&nbsp;trace&nbsp;event.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+event&nbsp;:&nbsp;PyTepEvent<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;event&nbsp;descriptor&nbsp;<a href="builtins.html#object">object</a>.<br>
+record&nbsp;:&nbsp;PyTepRecord<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;record.<br>
+Returns<br>
+-------<br>
+string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;process&nbsp;and&nbsp;its&nbsp;PID&nbsp;number.</tt></dd></dl>
+
+<dl><dt><a name="PyTep-short_kprobe_print"><strong>short_kprobe_print</strong></a>(...)</dt><dd><tt>Do&nbsp;not&nbsp;print&nbsp;the&nbsp;address&nbsp;of&nbsp;the&nbsp;probe.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+system&nbsp;:&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;system&nbsp;of&nbsp;the&nbsp;event.<br>
+event&nbsp;:&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;event.<br>
+id&nbsp;:&nbsp;int&nbsp;(optional)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;Id&nbsp;number&nbsp;of&nbsp;the&nbsp;event.</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="PyTep-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;<a href="builtins.html#object">object</a>.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><strong>tep_record</strong> = <a name="tep_record">class PyTepRecord</a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>libtrace&nbsp;<a href="#tep_record">tep_record</a>&nbsp;<a href="builtins.html#object">object</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="PyTepRecord-CPU"><strong>CPU</strong></a>(...)</dt><dd><tt>Get&nbsp;the&nbsp;CPU&nbsp;Id&nbsp;number&nbsp;of&nbsp;the&nbsp;record.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;CPU&nbsp;Id&nbsp;number.</tt></dd></dl>
+
+<dl><dt><a name="PyTepRecord-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="PyTepRecord-time"><strong>time</strong></a>(...)</dt><dd><tt>Get&nbsp;the&nbsp;time&nbsp;of&nbsp;the&nbsp;record.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Timestamp&nbsp;in&nbsp;nanoseconds</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="PyTepRecord-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;<a href="builtins.html#object">object</a>.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="tfs_error">class <strong>tfs_error</strong></a>(<a href="builtins.html#Exception">builtins.Exception</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="tracecruncher.ftracepy.html#tfs_error">tfs_error</a></dd>
+<dd><a href="builtins.html#Exception">builtins.Exception</a></dd>
+<dd><a href="builtins.html#BaseException">builtins.BaseException</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="builtins.html#Exception">builtins.Exception</a>:<br>
+<dl><dt><a name="tfs_error-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Static methods inherited from <a href="builtins.html#Exception">builtins.Exception</a>:<br>
+<dl><dt><a name="tfs_error-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;<a href="builtins.html#object">object</a>.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><a name="tfs_error-__delattr__"><strong>__delattr__</strong></a>(self, name, /)</dt><dd><tt>Implement&nbsp;delattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="tfs_error-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><tt>Return&nbsp;getattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="tfs_error-__reduce__"><strong>__reduce__</strong></a>(...)</dt><dd><tt>Helper&nbsp;for&nbsp;pickle.</tt></dd></dl>
+
+<dl><dt><a name="tfs_error-__repr__"><strong>__repr__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="tfs_error-__setattr__"><strong>__setattr__</strong></a>(self, name, value, /)</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="tfs_error-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="tfs_error-__str__"><strong>__str__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="tfs_error-with_traceback"><strong>with_traceback</strong></a>(...)</dt><dd><tt><a href="builtins.html#Exception">Exception</a>.<a href="#tfs_error-with_traceback">with_traceback</a>(tb)&nbsp;--<br>
+set&nbsp;self.<strong>__traceback__</strong>&nbsp;to&nbsp;tb&nbsp;and&nbsp;return&nbsp;self.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><strong>__cause__</strong></dt>
+<dd><tt>exception&nbsp;cause</tt></dd>
+</dl>
+<dl><dt><strong>__context__</strong></dt>
+<dd><tt>exception&nbsp;context</tt></dd>
+</dl>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>__suppress_context__</strong></dt>
+</dl>
+<dl><dt><strong>__traceback__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><strong>tracefs_dynevent</strong> = <a name="tracefs_dynevent">class PyDynevent</a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>libtrace&nbsp;<a href="#tracefs_dynevent">tracefs_dynevent</a>&nbsp;<a href="builtins.html#object">object</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="PyDynevent-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="PyDynevent-address"><strong>address</strong></a>(...)</dt><dd><tt>Get&nbsp;the&nbsp;address&nbsp;/&nbsp;function&nbsp;name&nbsp;of&nbsp;the&nbsp;dynamic&nbsp;event.</tt></dd></dl>
+
+<dl><dt><a name="PyDynevent-clear_filter"><strong>clear_filter</strong></a>(...)</dt><dd><tt>Clear&nbsp;the&nbsp;filter&nbsp;of&nbsp;a&nbsp;dynamic&nbsp;event.</tt></dd></dl>
+
+<dl><dt><a name="PyDynevent-disable"><strong>disable</strong></a>(...)</dt><dd><tt>Disable&nbsp;dynamic&nbsp;event.</tt></dd></dl>
+
+<dl><dt><a name="PyDynevent-enable"><strong>enable</strong></a>(...)</dt><dd><tt>Enable&nbsp;dynamic&nbsp;event.</tt></dd></dl>
+
+<dl><dt><a name="PyDynevent-event"><strong>event</strong></a>(...)</dt><dd><tt>Get&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;dynamic&nbsp;event.</tt></dd></dl>
+
+<dl><dt><a name="PyDynevent-get_filter"><strong>get_filter</strong></a>(...)</dt><dd><tt>Get&nbsp;the&nbsp;filter&nbsp;of&nbsp;a&nbsp;dynamic&nbsp;event.</tt></dd></dl>
+
+<dl><dt><a name="PyDynevent-is_enabled"><strong>is_enabled</strong></a>(...)</dt><dd><tt>Check&nbsp;if&nbsp;dynamic&nbsp;event&nbsp;is&nbsp;enabled.</tt></dd></dl>
+
+<dl><dt><a name="PyDynevent-probe"><strong>probe</strong></a>(...)</dt><dd><tt>Get&nbsp;the&nbsp;event&nbsp;definition.</tt></dd></dl>
+
+<dl><dt><a name="PyDynevent-register"><strong>register</strong></a>(...)</dt><dd><tt>Register&nbsp;dynamic&nbsp;event.</tt></dd></dl>
+
+<dl><dt><a name="PyDynevent-set_filter"><strong>set_filter</strong></a>(...)</dt><dd><tt>Define&nbsp;a&nbsp;filter&nbsp;for&nbsp;a&nbsp;dynamic&nbsp;event.</tt></dd></dl>
+
+<dl><dt><a name="PyDynevent-system"><strong>system</strong></a>(...)</dt><dd><tt>Get&nbsp;the&nbsp;system&nbsp;name&nbsp;of&nbsp;the&nbsp;dynamic&nbsp;event.</tt></dd></dl>
+
+<dl><dt><a name="PyDynevent-unregister"><strong>unregister</strong></a>(...)</dt><dd><tt>Unregister&nbsp;dynamic&nbsp;event.</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="PyDynevent-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;<a href="builtins.html#object">object</a>.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><strong>tracefs_hist</strong> = <a name="tracefs_hist">class PyTraceHist</a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>libtrace&nbsp;<a href="#tracefs_hist">tracefs_hist</a>&nbsp;<a href="builtins.html#object">object</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="PyTraceHist-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="PyTraceHist-add_value"><strong>add_value</strong></a>(...)</dt><dd><tt>Add&nbsp;value&nbsp;field.</tt></dd></dl>
+
+<dl><dt><a name="PyTraceHist-clear"><strong>clear</strong></a>(...)</dt><dd><tt>Reset&nbsp;the&nbsp;histogram.</tt></dd></dl>
+
+<dl><dt><a name="PyTraceHist-close"><strong>close</strong></a>(...)</dt><dd><tt>Destroy&nbsp;the&nbsp;histogram.</tt></dd></dl>
+
+<dl><dt><a name="PyTraceHist-read"><strong>read</strong></a>(...)</dt><dd><tt>Read&nbsp;the&nbsp;content&nbsp;of&nbsp;the&nbsp;histogram.</tt></dd></dl>
+
+<dl><dt><a name="PyTraceHist-resume"><strong>resume</strong></a>(...)</dt><dd><tt>Continue&nbsp;acquiring&nbsp;data.</tt></dd></dl>
+
+<dl><dt><a name="PyTraceHist-sort_key_direction"><strong>sort_key_direction</strong></a>(...)</dt><dd><tt>Set&nbsp;the&nbsp;direction&nbsp;of&nbsp;a&nbsp;sort&nbsp;key&nbsp;field.</tt></dd></dl>
+
+<dl><dt><a name="PyTraceHist-sort_keys"><strong>sort_keys</strong></a>(...)</dt><dd><tt>Set&nbsp;key&nbsp;felds&nbsp;or&nbsp;values&nbsp;to&nbsp;sort&nbsp;on.</tt></dd></dl>
+
+<dl><dt><a name="PyTraceHist-start"><strong>start</strong></a>(...)</dt><dd><tt>Start&nbsp;acquiring&nbsp;data.</tt></dd></dl>
+
+<dl><dt><a name="PyTraceHist-stop"><strong>stop</strong></a>(...)</dt><dd><tt>Pause&nbsp;acquiring&nbsp;data.</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="PyTraceHist-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;<a href="builtins.html#object">object</a>.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><strong>tracefs_instance</strong> = <a name="tracefs_instance">class PyTfsInstance</a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>libtrace&nbsp;<a href="#tracefs_instance">tracefs_instance</a>&nbsp;<a href="builtins.html#object">object</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="PyTfsInstance-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="PyTfsInstance-dir"><strong>dir</strong></a>(...)</dt><dd><tt>Get&nbsp;the&nbsp;absolute&nbsp;path&nbsp;to&nbsp;the&nbsp;Ftrace&nbsp;instance&nbsp;directory.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;absolute&nbsp;path&nbsp;to&nbsp;the&nbsp;instance&nbsp;directory</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="PyTfsInstance-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;<a href="builtins.html#object">object</a>.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><strong>tracefs_synth</strong> = <a name="tracefs_synth">class PySynthEvent</a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>libtrace&nbsp;<a href="#tracefs_synth">tracefs_synth</a>&nbsp;<a href="builtins.html#object">object</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="PySynthEvent-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="PySynthEvent-add_delta_T"><strong>add_delta_T</strong></a>(...)</dt><dd><tt>Add&nbsp;time-difference&nbsp;field.</tt></dd></dl>
+
+<dl><dt><a name="PySynthEvent-add_delta_end"><strong>add_delta_end</strong></a>(...)</dt><dd><tt>Add&nbsp;'end&nbsp;-&nbsp;start'&nbsp;field.</tt></dd></dl>
+
+<dl><dt><a name="PySynthEvent-add_delta_start"><strong>add_delta_start</strong></a>(...)</dt><dd><tt>Add&nbsp;'start&nbsp;-&nbsp;end'&nbsp;field.</tt></dd></dl>
+
+<dl><dt><a name="PySynthEvent-add_end_fields"><strong>add_end_fields</strong></a>(...)</dt><dd><tt>Add&nbsp;fields&nbsp;from&nbsp;the&nbsp;end&nbsp;event&nbsp;to&nbsp;save.</tt></dd></dl>
+
+<dl><dt><a name="PySynthEvent-add_start_fields"><strong>add_start_fields</strong></a>(...)</dt><dd><tt>Add&nbsp;fields&nbsp;from&nbsp;the&nbsp;start&nbsp;event&nbsp;to&nbsp;save.</tt></dd></dl>
+
+<dl><dt><a name="PySynthEvent-add_sum"><strong>add_sum</strong></a>(...)</dt><dd><tt>Add&nbsp;'start&nbsp;+&nbsp;end'&nbsp;field.</tt></dd></dl>
+
+<dl><dt><a name="PySynthEvent-clear_filter"><strong>clear_filter</strong></a>(...)</dt><dd><tt>Clear&nbsp;the&nbsp;filter&nbsp;of&nbsp;a&nbsp;synthetic&nbsp;event.</tt></dd></dl>
+
+<dl><dt><a name="PySynthEvent-disable"><strong>disable</strong></a>(...)</dt><dd><tt>Disable&nbsp;synth.&nbsp;event.</tt></dd></dl>
+
+<dl><dt><a name="PySynthEvent-enable"><strong>enable</strong></a>(...)</dt><dd><tt>Enable&nbsp;synth.&nbsp;event.</tt></dd></dl>
+
+<dl><dt><a name="PySynthEvent-get_filter"><strong>get_filter</strong></a>(...)</dt><dd><tt>Get&nbsp;the&nbsp;filter&nbsp;of&nbsp;a&nbsp;synthetic&nbsp;event.</tt></dd></dl>
+
+<dl><dt><a name="PySynthEvent-is_enabled"><strong>is_enabled</strong></a>(...)</dt><dd><tt>Check&nbsp;if&nbsp;synth.&nbsp;event&nbsp;is&nbsp;enabled.</tt></dd></dl>
+
+<dl><dt><a name="PySynthEvent-register"><strong>register</strong></a>(...)</dt><dd><tt>Register&nbsp;synth.&nbsp;event.</tt></dd></dl>
+
+<dl><dt><a name="PySynthEvent-repr"><strong>repr</strong></a>(...)</dt><dd><tt>Show&nbsp;a&nbsp;representative&nbsp;descriptor&nbsp;of&nbsp;the&nbsp;synth.&nbsp;event.</tt></dd></dl>
+
+<dl><dt><a name="PySynthEvent-set_filter"><strong>set_filter</strong></a>(...)</dt><dd><tt>Define&nbsp;a&nbsp;filter&nbsp;for&nbsp;a&nbsp;synthetic&nbsp;event.</tt></dd></dl>
+
+<dl><dt><a name="PySynthEvent-unregister"><strong>unregister</strong></a>(...)</dt><dd><tt>Unregister&nbsp;synth.&nbsp;event.</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="PySynthEvent-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;<a href="builtins.html#object">object</a>.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-attach"><strong>attach</strong></a>(...)</dt><dd><tt>Attach&nbsp;<a href="builtins.html#object">object</a>&nbsp;to&nbsp;the&nbsp;'ftracepy'&nbsp;module.</tt></dd></dl>
+ <dl><dt><a name="-available_event_systems"><strong>available_event_systems</strong></a>(...)</dt><dd><tt>Get&nbsp;a&nbsp;list&nbsp;of&nbsp;available&nbsp;trace&nbsp;event&nbsp;systems.</tt></dd></dl>
+ <dl><dt><a name="-available_system_events"><strong>available_system_events</strong></a>(...)</dt><dd><tt>Get&nbsp;a&nbsp;list&nbsp;of&nbsp;available&nbsp;trace&nbsp;event&nbsp;for&nbsp;a&nbsp;given&nbsp;system.</tt></dd></dl>
+ <dl><dt><a name="-available_tracers"><strong>available_tracers</strong></a>(...)</dt><dd><tt>Get&nbsp;a&nbsp;list&nbsp;of&nbsp;available&nbsp;tracers.</tt></dd></dl>
+ <dl><dt><a name="-clear_error_log"><strong>clear_error_log</strong></a>(...)</dt><dd><tt>Clear&nbsp;the&nbsp;content&nbsp;of&nbsp;the&nbsp;error&nbsp;log.</tt></dd></dl>
+ <dl><dt><a name="-clear_event_filter"><strong>clear_event_filter</strong></a>(...)</dt><dd><tt>Clear&nbsp;event&nbsp;filter.</tt></dd></dl>
+ <dl><dt><a name="-create_instance"><strong>create_instance</strong></a>(...)</dt><dd><tt>Create&nbsp;new&nbsp;tracefs&nbsp;instance.</tt></dd></dl>
+ <dl><dt><a name="-detach"><strong>detach</strong></a>(...)</dt><dd><tt>Detach&nbsp;<a href="builtins.html#object">object</a>&nbsp;from&nbsp;the&nbsp;'ftracepy'&nbsp;module.</tt></dd></dl>
+ <dl><dt><a name="-dir"><strong>dir</strong></a>(...)</dt><dd><tt>Get&nbsp;the&nbsp;absolute&nbsp;path&nbsp;to&nbsp;the&nbsp;tracefs&nbsp;directory.</tt></dd></dl>
+ <dl><dt><a name="-disable_event"><strong>disable_event</strong></a>(...)</dt><dd><tt>Disable&nbsp;trece&nbsp;event.</tt></dd></dl>
+ <dl><dt><a name="-disable_events"><strong>disable_events</strong></a>(...)</dt><dd><tt>Disable&nbsp;multiple&nbsp;trece&nbsp;event.</tt></dd></dl>
+ <dl><dt><a name="-disable_option"><strong>disable_option</strong></a>(...)</dt><dd><tt>Disable&nbsp;trece&nbsp;option.</tt></dd></dl>
+ <dl><dt><a name="-enable_event"><strong>enable_event</strong></a>(...)</dt><dd><tt>Enable&nbsp;trece&nbsp;event.</tt></dd></dl>
+ <dl><dt><a name="-enable_events"><strong>enable_events</strong></a>(...)</dt><dd><tt>Enable&nbsp;multiple&nbsp;trece&nbsp;event.</tt></dd></dl>
+ <dl><dt><a name="-enable_option"><strong>enable_option</strong></a>(...)</dt><dd><tt>Enable&nbsp;trece&nbsp;option.</tt></dd></dl>
+ <dl><dt><a name="-enabled_options"><strong>enabled_options</strong></a>(...)</dt><dd><tt>Gat&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;supported&nbsp;options.</tt></dd></dl>
+ <dl><dt><a name="-eprobe"><strong>eprobe</strong></a>(...)</dt><dd><tt>Define&nbsp;an&nbsp;eprobe.</tt></dd></dl>
+ <dl><dt><a name="-error_log"><strong>error_log</strong></a>(...)</dt><dd><tt>Get&nbsp;the&nbsp;content&nbsp;of&nbsp;the&nbsp;error&nbsp;log.</tt></dd></dl>
+ <dl><dt><a name="-event_is_enabled"><strong>event_is_enabled</strong></a>(...)</dt><dd><tt>Check&nbsp;if&nbsp;event&nbsp;is&nbsp;enabled.</tt></dd></dl>
+ <dl><dt><a name="-find_instance"><strong>find_instance</strong></a>(...)</dt><dd><tt>Find&nbsp;an&nbsp;existing&nbsp;ftrace&nbsp;instance.</tt></dd></dl>
+ <dl><dt><a name="-get_current_tracer"><strong>get_current_tracer</strong></a>(...)</dt><dd><tt>Check&nbsp;the&nbsp;enabled&nbsp;tracer.</tt></dd></dl>
+ <dl><dt><a name="-hist"><strong>hist</strong></a>(...)</dt><dd><tt>Define&nbsp;a&nbsp;histogram.</tt></dd></dl>
+ <dl><dt><a name="-hook2pid"><strong>hook2pid</strong></a>(...)</dt><dd><tt>Trace&nbsp;only&nbsp;particular&nbsp;process.</tt></dd></dl>
+ <dl><dt><a name="-is_attached"><strong>is_attached</strong></a>(...)</dt><dd><tt>Check&nbsp;if&nbsp;the&nbsp;<a href="builtins.html#object">object</a>&nbsp;is&nbsp;attached&nbsp;to&nbsp;the&nbsp;'ftracepy'&nbsp;module.</tt></dd></dl>
+ <dl><dt><a name="-is_tracing_ON"><strong>is_tracing_ON</strong></a>(...)</dt><dd><tt>Check&nbsp;if&nbsp;tracing&nbsp;is&nbsp;ON.</tt></dd></dl>
+ <dl><dt><a name="-iterate_trace"><strong>iterate_trace</strong></a>(...)</dt><dd><tt>Trace&nbsp;a&nbsp;shell&nbsp;process.</tt></dd></dl>
+ <dl><dt><a name="-kprobe"><strong>kprobe</strong></a>(...)</dt><dd><tt>Define&nbsp;a&nbsp;kprobe.</tt></dd></dl>
+ <dl><dt><a name="-kretprobe"><strong>kretprobe</strong></a>(...)</dt><dd><tt>Define&nbsp;a&nbsp;kretprobe.</tt></dd></dl>
+ <dl><dt><a name="-no_arg"><strong>no_arg</strong></a>(...)</dt><dd><tt>Returns&nbsp;a&nbsp;default&nbsp;value&nbsp;for&nbsp;an&nbsp;optional&nbsp;function&nbsp;argument.</tt></dd></dl>
+ <dl><dt><a name="-option_is_set"><strong>option_is_set</strong></a>(...)</dt><dd><tt>Check&nbsp;if&nbsp;trece&nbsp;option&nbsp;is&nbsp;enabled.</tt></dd></dl>
+ <dl><dt><a name="-read_trace"><strong>read_trace</strong></a>(...)</dt><dd><tt>Trace&nbsp;a&nbsp;shell&nbsp;process.</tt></dd></dl>
+ <dl><dt><a name="-set_current_tracer"><strong>set_current_tracer</strong></a>(...)</dt><dd><tt>Enable&nbsp;a&nbsp;tracer.</tt></dd></dl>
+ <dl><dt><a name="-set_event_filter"><strong>set_event_filter</strong></a>(...)</dt><dd><tt>Define&nbsp;event&nbsp;filter.</tt></dd></dl>
+ <dl><dt><a name="-set_event_pid"><strong>set_event_pid</strong></a>(...)</dt><dd><tt>.</tt></dd></dl>
+ <dl><dt><a name="-set_ftrace_loglevel"><strong>set_ftrace_loglevel</strong></a>(...)</dt><dd><tt>Set&nbsp;the&nbsp;verbose&nbsp;level&nbsp;of&nbsp;the&nbsp;ftrace&nbsp;libraries.</tt></dd></dl>
+ <dl><dt><a name="-set_ftrace_pid"><strong>set_ftrace_pid</strong></a>(...)</dt><dd><tt>.</tt></dd></dl>
+ <dl><dt><a name="-supported_options"><strong>supported_options</strong></a>(...)</dt><dd><tt>Gat&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;supported&nbsp;options.</tt></dd></dl>
+ <dl><dt><a name="-synth"><strong>synth</strong></a>(...)</dt><dd><tt>Define&nbsp;a&nbsp;synthetic&nbsp;event.</tt></dd></dl>
+ <dl><dt><a name="-tc_event_system"><strong>tc_event_system</strong></a>(...)</dt><dd><tt>Get&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;event&nbsp;system&nbsp;used&nbsp;by&nbsp;trace-cruncher.</tt></dd></dl>
+ <dl><dt><a name="-trace_process"><strong>trace_process</strong></a>(...)</dt><dd><tt>Trace&nbsp;a&nbsp;process.</tt></dd></dl>
+ <dl><dt><a name="-trace_shell_process"><strong>trace_shell_process</strong></a>(...)</dt><dd><tt>Trace&nbsp;a&nbsp;process&nbsp;executed&nbsp;within&nbsp;a&nbsp;shell.</tt></dd></dl>
+ <dl><dt><a name="-tracing_OFF"><strong>tracing_OFF</strong></a>(...)</dt><dd><tt>Stop&nbsp;tracing.</tt></dd></dl>
+ <dl><dt><a name="-tracing_ON"><strong>tracing_ON</strong></a>(...)</dt><dd><tt>Start&nbsp;tracing.</tt></dd></dl>
+</td></tr></table>
+</body></html>

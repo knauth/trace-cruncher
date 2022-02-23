@@ -6,6 +6,7 @@
 
 // trace-cruncher
 #include "ftracepy-utils.h"
+#include "ftracepy-docs.h"
 
 extern PyObject *TFS_ERROR;
 extern PyObject *TEP_ERROR;
@@ -15,12 +16,12 @@ static PyMethodDef PyTepRecord_methods[] = {
 	{"time",
 	 (PyCFunction) PyTepRecord_time,
 	 METH_NOARGS,
-	 "Get the time of the record."
+	 PyTepRecord_time_doc,
 	},
 	{"CPU",
 	 (PyCFunction) PyTepRecord_cpu,
 	 METH_NOARGS,
-	 "Get the CPU Id of the record."
+	 PyTepRecord_CPU_doc,
 	},
 	{NULL}
 };
@@ -31,26 +32,27 @@ static PyMethodDef PyTepEvent_methods[] = {
 	{"name",
 	 (PyCFunction) PyTepEvent_name,
 	 METH_NOARGS,
-	 "Get the name of the event."
+	 PyTepEvent_name_doc,
 	},
 	{"id",
 	 (PyCFunction) PyTepEvent_id,
 	 METH_NOARGS,
-	 "Get the unique identifier of the event."
+	 PyTepEvent_id_doc,
 	},
 	{"field_names",
 	 (PyCFunction) PyTepEvent_field_names,
 	 METH_NOARGS,
-	 "Get the names of all fields."
+	 PyTepEvent_field_names_doc,
 	},
 	{"parse_record_field",
 	 (PyCFunction) PyTepEvent_parse_record_field,
 	 METH_VARARGS | METH_KEYWORDS,
-	 "Get the content of a record field."
+	 PyTepEvent_parse_record_field_doc,
 	},
 	{"get_pid",
 	 (PyCFunction) PyTepEvent_get_pid,
 	 METH_VARARGS | METH_KEYWORDS,
+	 PyTepEvent_get_pid_doc,
 	},
 	{NULL}
 };
@@ -61,32 +63,32 @@ static PyMethodDef PyTep_methods[] = {
 	{"init_local",
 	 (PyCFunction) PyTep_init_local,
 	 METH_VARARGS | METH_KEYWORDS,
-	 "Initialize from local instance."
+	 PyTep_init_local_doc,
 	},
 	{"get_event",
 	 (PyCFunction) PyTep_get_event,
 	 METH_VARARGS | METH_KEYWORDS,
-	 "Get a PyTepEvent object."
+	 PyTep_get_event_doc,
 	},
 	{"event_record",
 	 (PyCFunction) PyTep_event_record,
 	 METH_VARARGS | METH_KEYWORDS,
-	 "Generic print of a trace event."
+	 PyTep_event_record_doc,
 	},
 	{"process",
 	 (PyCFunction) PyTep_process,
 	 METH_VARARGS | METH_KEYWORDS,
-	 "Generic print of the process that generated the trace event."
+	 PyTep_process_doc,
 	},
 	{"info",
 	 (PyCFunction) PyTep_info,
 	 METH_VARARGS | METH_KEYWORDS,
-	 "Generic print of a trace event info."
+	 PyTep_info_doc,
 	},
 	{"short_kprobe_print",
 	 (PyCFunction) PyTep_short_kprobe_print,
 	 METH_VARARGS | METH_KEYWORDS,
-	 "Do not print the address of the probe."
+	 PyTep_short_kprobe_print_doc,
 	},
 	{NULL}
 };
@@ -97,7 +99,7 @@ static PyMethodDef PyTfsInstance_methods[] = {
 	{"dir",
 	 (PyCFunction) PyTfsInstance_dir,
 	 METH_NOARGS,
-	 "Get the absolute path to the instance directory."
+	 PyTfsInstance_dir_doc,
 	},
 	{NULL, NULL, 0, NULL}
 };
