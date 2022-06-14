@@ -38,3 +38,5 @@ make
 sudo make install
 
 echo "---Running Unit Tests---"
+cd tests
+sudo python3 -m unittest discover .
