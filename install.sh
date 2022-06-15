@@ -1,13 +1,12 @@
 #!/bin/bash
 # trace-cruncher install script
 # created by June Knauth (VMware) <june.knauth@gmail.com>, 2022-06-14
+# Debian version for docker testing
 
 # Install Dependencies
 echo "---Installing APT Deps---"
-sudo apt-get update
-sudo apt-get install build-essential git cmake libjson-c-dev -y
-sudo apt-get install libpython3-dev cython3 python3-numpy python3-pip -y
-sudo apt-get install flex valgrind binutils-dev pkg-config -y
+sudo apt update
+sudo apt install build-essential git cmake libjson-c-dev libpython3-dev cython3 python3-numpy python3-pip flex valgrind binutils-dev pkg-config swig -y
 sudo pip3 install --system pkgconfig GitPython
 
 echo "---Building Other Deps---"
