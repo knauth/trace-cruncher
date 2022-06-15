@@ -17,9 +17,9 @@ RUN git clone https://git.kernel.org/pub/scm/libs/libtrace/libtracefs.git &&\
 cd libtracefs && make && make install
 RUN git clone https://git.kernel.org/pub/scm/utils/trace-cmd/trace-cmd.git &&\
 cd trace-cmd && make && make install_libs
-RUN git clone https://github.com/yordan-karadzhov/kernel-shark-v2.beta.git &&\
+RUN git clone https://github.com/yordan-karadzhov/kernel-shark-v2.beta.git kernel-shark &&\
 cd kernel-shark/build && cmake .. && make && make install
 # Install trace-cruncher
 RUN make && make install
 # Run the unit tests
-RUN cd tests && python3 -m unittest discover .
+# RUN cd tests && python3 -m unittest discover .
